@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: orange;
+}
+
+.div-single {
+  height: 5rem;
+  /* max-height: 100%; */
+  width: 5rem;
+  background-color: azure;
+}
+
+.row {
+  display: flex;
+  gap: 0.7rem;
+}
+
+#canvas {
+  display: flex;
+  gap: 7px;
+  flex: 0 1 auto;
+}

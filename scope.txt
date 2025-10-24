@@ -1,0 +1,1 @@
+- Create a grid of square div of 16x16 using JavaScript

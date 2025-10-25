@@ -4,10 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-A-Sketch</title>
+    <!-- Fetch CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Jersey+10&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="doto-bold">
+    <div id="title">
+      <h1 class="jersey-10-regular">Etch-A-Sketch</h1>
+    </div>
     <div id="canvas"></div>
+    <div id="option">
+      <form id="option-form">
+        <input
+          type="text"
+          name="custom-cell"
+          id="custom-cell"
+          placeholder="Number of Cells"
+          class="doto-bold"
+          autofocus
+        />
+
+        <button id="btnGenerateGrid" class="jersey-10-regular">
+          Generate Grid
+        </button>
+        <button id="btnReset" class="jersey-10-regular">Reset</button>
+      </form>
+    </div>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>

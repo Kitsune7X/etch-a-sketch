@@ -1,3 +1,5 @@
+/* Initial Setting START */
+
 *,
 *::before,
 *::after {
@@ -9,15 +11,59 @@ body {
   height: 100%;
 }
 body {
-  background-color: #d9d2c4;
+  background-color: #e7e2d5;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 3rem 0;
+  max-width: 56.25rem;
+  margin: 0 auto;
+}
+
+input,
+button,
+textarea,
+select {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+  outline: none;
+  font-size: 100%;
+}
+
+/* Fonts */
+
+.doto-bold {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+}
+
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Initial Setting END */
+
+/* Title START */
+h1 {
+  margin: 0;
+  font-size: 6rem;
+  color: #d87a69;
+  /* text-shadow: 3px 3px rgba(0, 0, 0, 0.7); */
 }
 
 .div-single {
-  height: 2rem;
-  /* max-height: 100%; */
+  aspect-ratio: 1 / 1;
   width: 2rem;
   background-color: #ffffff;
   border-radius: 0.1rem;
@@ -26,23 +72,66 @@ body {
 .row {
   display: flex;
   gap: 0.05rem;
+  max-width: 100%;
   /* background-color: black; */
 }
 
 #canvas {
   display: flex;
   gap: 0.05rem;
-  /* flex: 0 1 auto; */
   flex-direction: column;
-  /* width: 100%; */
-  /* height: 100%; */
   align-items: center;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
-  /* border-radius: 50%; */
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   width: 32.75rem;
   height: 32.75rem;
 }
 
 .black {
-  background-color: #000;
+  background-color: #141414;
 }
+
+/* Form START */
+#option {
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#option-form {
+  display: flex;
+  position: relative;
+  width: 29rem;
+  justify-content: space-between;
+}
+
+#custom-cell {
+  border-bottom: 0.1rem solid #141414;
+  padding-left: 0.4rem;
+  background-color: #d8c9b6;
+}
+
+#option-form label {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+button {
+  border: 2px solid #141414;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+  cursor: pointer;
+}
+
+#btnGenerateGrid {
+  background-color: #f4a58a;
+}
+
+#btnReset {
+  background-color: #d87a69;
+}
+/* Form END */

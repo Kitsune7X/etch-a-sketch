@@ -67,7 +67,7 @@ option.addEventListener("click", (e) => {
 // Functions
 // -------------------------------
 
-// Create a single div function
+// ---------- Create a single div function ----------
 function createSingleDiv(row) {
   // Create a single div element
   const div = document.createElement("div");
@@ -77,7 +77,7 @@ function createSingleDiv(row) {
   return row.appendChild(div);
 }
 
-// Create Grid Function
+// ---------- Create Grid function ----------
 function createGrid(cell) {
   // Create Grid by using 2 dimenssional loop
   for (let i = 0; i < cell; i++) {
@@ -90,7 +90,7 @@ function createGrid(cell) {
   }
 }
 
-// Drawn Dot function
+// ---------- Draw dot function ----------
 function drawDot(e) {
   // Disable dragging element
   e.preventDefault();
@@ -108,7 +108,7 @@ function drawDot(e) {
   });
 }
 
-// Create Custom Grid
+// ---------- Create custom Grid function ----------
 function createCustomGrid(cellCount) {
   // Calculate Cell Dimenstion in rem
   const cellDimension = canvas.clientHeight / cellCount / oneRemInPixel;

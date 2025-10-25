@@ -39,6 +39,8 @@ body {
   align-items: center;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
   /* border-radius: 50%; */
+  width: 32.75rem;
+  height: 32.75rem;
 }
 
 .black {

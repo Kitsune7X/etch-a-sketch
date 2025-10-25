@@ -34,11 +34,14 @@ console.log(drawPoint);
 console.log(drawPoint[0]);
 
 // Set up mouse hover event listener
-canvas.addEventListener("mouseover", (e) => {
-  console.log(e.target);
-  console.log(typeof e.target);
-  console.log(e.target.firstElementChild);
+canvas.addEventListener("mousedown", (e) => {
+  // console.log(e.target.firstElementChild);
   if (!e.target.firstElementChild) {
     e.target.classList.add("black");
+    canvas.addEventListener("mouseover", (e) => {
+      if (!e.target.firstElementChild) {
+        e.target.classList.add("black");
+      }
+    });
   }
 });
